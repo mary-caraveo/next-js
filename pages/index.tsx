@@ -17,8 +17,10 @@ const HomePage = () => {
     <div>
       <Navbar />
       <h1>Next JS</h1>
-      {productList.map((product) => (
+      {productList.map((product, key) => (
+        <div key={key}>
         <div>{product.name}</div>
+      </div>
       ))}
     </div>
   );
