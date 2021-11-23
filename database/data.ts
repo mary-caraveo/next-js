@@ -4,7 +4,7 @@ const data: Record<TProductId, TProduct> = {
     id: '2zd33b8c',
     sku: 'NUR72KCM',
     price: 35,
-    image: '/images/strawberries.jpg',
+    image: 'https://cdn.pixabay.com/photo/2018/05/26/10/54/strawberries-3431122__340.jpg',
     attributes: {
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid modi assumenda, voluptate quos esse voluptas tempora. Unde nemo, recusandae fugiat nostrum maiores esse fuga incidunt culpa adipisci asperiores quisquam libero?',

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Menu, Container } from 'semantic-ui-react';
@@ -15,7 +15,7 @@ const Navbar = () => {
       <Container text>
         <Link href="/" passHref>
           <Menu.Item
-            active={pathname === "/"}
+            active={pathname === '/'}
             title="Inicio | Todos los productos"
           >
             <Avocado />
@@ -24,7 +24,7 @@ const Navbar = () => {
         </Link>
         <Menu.Menu position="right">
           <Link href="/cart" passHref>
-            <Menu.Item active={pathname === "/cart"}>
+            <Menu.Item active={pathname === '/cart'}>
               <ShoppingCartIcon cartCount={cartCount} name="Canasta" />
             </Menu.Item>
           </Link>
@@ -33,7 +33,22 @@ const Navbar = () => {
       <style jsx global>{`
         .ui.menu.huge {
           font-size: 1.5rem;
+          background-color: green;
         }
+
+        .ui.menu .active.item {
+          background-color: gray;
+          color: white;
+        }
+
+        .ui.pointing.menu .active.item:after {
+          background-color: gray;
+        }
+
+        .ui.menu .active.item:hover, .ui.vertical.menu .active.item:hover {
+          background-color: rgba(0,0,0,.05);
+          color: white;
+}
       `}</style>
     </Menu>
   );
