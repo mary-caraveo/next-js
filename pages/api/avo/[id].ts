@@ -1,8 +1,8 @@
-import { NextApiRequest, NextApiResponse } from "next";
-import enablePublicAccess from "@cors";
-import DB from "@database";
+import { NextApiRequest, NextApiResponse } from 'next';
+import DB from '@database';
+import enablePublicAccess from '@cors';
 
-const allAvos = async (request: NextApiRequest, response: NextApiResponse) => {
+const AvoDetail = async (request: NextApiRequest, response: NextApiResponse) => {
   try {
     await enablePublicAccess(request, response);
     const db = new DB();
@@ -16,4 +16,4 @@ const allAvos = async (request: NextApiRequest, response: NextApiResponse) => {
   }
 };
 
-export default allAvos;
+export default AvoDetail;

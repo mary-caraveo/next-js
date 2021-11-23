@@ -12,15 +12,14 @@ export type CartAction = {
   quantity?: number
 }
 
-const defaultState = {} as CartState
-
-const CartItemsContext = React.createContext(defaultState)
+const defaultState = {} as CartState;
+const CartItemsContext = React.createContext(defaultState);
 const CartDispatchContext = React.createContext((() => {}) as Dispatch<
   CartAction
->)
+>);
 
 const CartProvider = ({ children }: { children: React.ReactNode }) => {
-  const [state, dispatch] = useReducer(cartReducers, defaultState)
+  const [state, dispatch] = useReducer(cartReducers, defaultState);
 
   return (
     <CartItemsContext.Provider value={state}>
