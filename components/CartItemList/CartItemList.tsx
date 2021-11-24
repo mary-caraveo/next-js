@@ -54,9 +54,9 @@ const CartItemList = ({
             floated="right"
             onClick={() => removeFromCart(cartItem)}
           />
-        ),
-      };
-    });
+          ),
+        };
+      });
 
   return <Item.Group divided items={mapCartItemsToItems(items)} as="section" />;
 };
