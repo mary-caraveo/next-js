@@ -36,6 +36,10 @@ const Navbar = () => {
           background-color: green;
         }
 
+        .ui.menu .item {
+          color: white;
+        }
+
         .ui.menu .active.item {
           background-color: gray;
           color: white;
@@ -48,7 +52,7 @@ const Navbar = () => {
         .ui.menu .active.item:hover, .ui.vertical.menu .active.item:hover {
           background-color: rgba(0,0,0,.05);
           color: white;
-}
+        }
       `}</style>
     </Menu>
   );

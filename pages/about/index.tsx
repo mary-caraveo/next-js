@@ -59,7 +59,7 @@ const AboutPage = () => {
         </ol>
       </section>
 
-      <style jsx>{`
+      <style jsx global>{`
         figure,
         ol {
           padding: 0;
@@ -69,6 +69,14 @@ const AboutPage = () => {
         figure {
           margin: 2rem auto 3rem;
           text-align: center;
+        }
+
+        .ui.image {
+          border-radius: 25px;
+        }
+
+        p {
+          text-align: justify;
         }
 
         figcaption {
@@ -90,7 +98,7 @@ const AboutPage = () => {
           content: counter(orderedlist);
           position: absolute;
           top: -43px;
-          left: -5px;
+          left: -42px;
           color: #cecece;
           font-size: 5rem;
           font-weight: bold;

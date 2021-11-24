@@ -14,6 +14,18 @@ const CartPage = () => {
       <CartItemList items={items} removeFromCart={removeFromCart} />
       <Divider />
       <CartSummary totalAmount={count} />
+
+      <style jsx global>{`
+        .ui.items>.item>.image>img {
+          border-radius: 20px;
+        }
+
+        .ui.image {
+          border-radius: 20px;
+          height: 90px;
+        }
+      `}
+      </style>
     </Layout>
   )
 }

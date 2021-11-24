@@ -86,16 +86,16 @@ function cartReducers(
 }
 
 const getCartSubTotal = (sum: number, item: CartItemType) => {
-  sum += item.price * item.quantity
-  return sum
+  sum += item.price * item.quantity;
+  return sum;
 }
-const getCartCount = (sum: number, item: CartItemType) => sum + item.quantity
+const getCartCount = (sum: number, item: CartItemType) => sum + item.quantity;
 
 export const useCart = () => {
-  const itemsById = useContext(CartItemsContext)
-  const items = Object.values(itemsById)
-  const count = items.reduce(getCartCount, 0)
-  const subTotal = items.reduce(getCartSubTotal, 0)
+  const itemsById = useContext(CartItemsContext);
+  const items = Object.values(itemsById);
+  const count = items.reduce(getCartCount, 0);
+  const subTotal = items.reduce(getCartSubTotal, 0);
 
   return {
     items,

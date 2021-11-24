@@ -9,7 +9,7 @@ type ProductSummaryProps = {
 
 const ProductSummary = ({ product }: ProductSummaryProps) => (
   <>
-  <h1>Añadir la cantidad de piezas a la canasta</h1>
+  <h1>Añadir la cantidad requerida a la canasta</h1>
     <Item.Group as="section">
       <Item style={{ alignItems: 'center' }}>
         <Item.Image size="medium">
