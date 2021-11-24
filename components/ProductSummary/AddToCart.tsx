@@ -1,29 +1,29 @@
-import React, { useState, useContext } from 'react';
+import React, { useState} from 'react';
 import { Input, Icon, Transition } from 'semantic-ui-react';
 import { useCartMutations } from '@store/Cart/Cart';
 
 type AddToCartProps = {
-  product: TProduct
+  product: TProduct;
 }
 
 const addToCartRequest = () =>
-  new Promise((resolve, reject) => {
-    window.setTimeout(resolve, 600)
+  new Promise((resolve) => {
+    window.setTimeout(resolve, 600);
   })
 
 const validate = (quantity: number) => {
   let error = ''
   if (quantity < 1) error = "Can't be blank"
 
-  return error
+  return error;
 }
 
 const AddToCart = ({ product }: AddToCartProps) => {
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState('')
-  const [quantity, setQuantity] = useState(1)
-  const [visible, setVisible] = useState(false)
-  const { addToCart } = useCartMutations()
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+  const [quantity, setQuantity] = useState(1);
+  const [visible, setVisible] = useState(false);
+  const { addToCart } = useCartMutations();
 
   const toggleMessage = () => {
     setTimeout(() => {
