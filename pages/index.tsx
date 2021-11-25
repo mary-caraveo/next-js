@@ -4,7 +4,7 @@ import Layout from '@components/Layout/Layout';
 import KawaiiHeader from '@components/KawaiiHeader/KawaiiHeader';
 import ProductList from '@components/ProductList/ProductList';
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const response = await fetch('https://next-js-sand-tau-80.vercel.app/api/avo');
   const { data: productList }: TAPIAvoResponse = await response.json();
 
