@@ -28,6 +28,7 @@ const ShoppingCartIcon = ({ cartCount, name }: ShoppingCartIconProps) => {
         {` ${name} `}
         {showCartCount()}
       </div>
+
       <style jsx>{`
         .container {
           display: flex;

@@ -37,6 +37,6 @@ const ProductAttributes = ({
       }
     `}</style>
   </section>
-)
+);
 
 export default ProductAttributes;

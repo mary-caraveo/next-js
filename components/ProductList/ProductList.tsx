@@ -16,7 +16,7 @@ const mapProductsToCards = (products: TProduct[]) =>
         meta={<Card.Meta style={{ color: 'dimgray' }}>${price}.00</Card.Meta>}
       />
     </Link>
-))
+));
 
 const ProductList = ({ products }: ProductListProps) => (
   <Card.Group itemsPerRow={3} stackable>
@@ -34,6 +34,6 @@ const ProductList = ({ products }: ProductListProps) => (
     `}
     </style>
   </Card.Group>
-)
+);
 
 export default ProductList;
