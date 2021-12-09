@@ -83,6 +83,13 @@ const AddToCart = ({ product }: AddToCartProps) => {
           Added to cart
         </div>
       </Transition>
+
+      <style jsx global>{`
+        .ui.input > input {
+          padding: 10px 0 10px 10px;
+        }
+      `}
+      </style>
     </>
   )
 }

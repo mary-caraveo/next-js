@@ -3,17 +3,22 @@ import { Segment, Button } from 'semantic-ui-react';
 
 type CartSummaryProps = {
   totalAmount: number;
+  quantityProducts: number;
 };
 
-const CartSummary = ({ totalAmount }: CartSummaryProps) => {
+const CartSummary = ({ totalAmount, quantityProducts }: CartSummaryProps) => {
   return (
     <Segment clearing size="large" as="section">
-      <span>
-        <strong>Sub total:</strong>
-        {` ${totalAmount}`}
+      <span style={{display: 'flex', paddingBottom: '25px', fontSize: '16px'}}>
+        <strong style={{paddingRight: '25px'}}>Cantidad: </strong>
+        {`${quantityProducts}`}
       </span>
-      <Button color="black" floated="right">
-        Check out
+      <span>
+        <strong style={{paddingRight: '45px', fontSize: '16px'}}>Total: </strong>
+        ${`${totalAmount}`}.00
+      </span>
+      <Button style={{fontSize: '14px', backgroundColor: '#0c7825', color: 'white'}} floated="right">
+        Pagar
       </Button>
     </Segment>
   );

@@ -6,14 +6,14 @@ import CartSummary from '@components/CartSummary/CartSummary';
 import { useCart, useCartMutations } from '@store/Cart/Cart';
 
 const CartPage = () => {
-  const { items, count } = useCart()
+  const { items, count, subTotal } = useCart()
   const { removeFromCart } = useCartMutations()
 
   return (
     <Layout>
       <CartItemList items={items} removeFromCart={removeFromCart} />
       <Divider />
-      <CartSummary totalAmount={count} />
+      <CartSummary quantityProducts={count} totalAmount={subTotal} />
 
       <style jsx global>{`
         .ui.items>.item>.image>img {
