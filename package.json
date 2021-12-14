@@ -8,6 +8,7 @@
     "dev:inspect": "npm --node-options=--inspect=0.0.0.0:9229 run dev",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
     "lint": "next lint",
     "type-check": "tsc --noEmit"
   },
