@@ -37,22 +37,37 @@ const Navbar = () => {
           background-color: green;
         }
 
-        .ui.menu .item {
+        .ui.menu
+        .item {
           color: white;
+          padding: 5px 6px;
         }
 
-        .ui.menu .active.item {
+        .ui.menu
+        .active.item {
           background-color: gray;
           color: white;
         }
 
-        .ui.pointing.menu .active.item:after {
+        .ui.pointing.menu
+        .active.item:after {
           background-color: gray;
         }
 
-        .ui.menu .active.item:hover, .ui.vertical.menu .active.item:hover {
+        .ui.menu
+        .active.item:hover,
+        .ui.vertical.menu
+        .active.item:hover {
           background-color: rgba(0,0,0,.05);
           color: white;
+        }
+
+        .ui.input>input {
+          max-width: 55%;
+        }
+
+        .ui.text.container p{
+          text-align: justify;
         }
       `}</style>
     </Menu>
