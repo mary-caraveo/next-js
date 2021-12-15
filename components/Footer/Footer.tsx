@@ -74,6 +74,10 @@ const Footer = () => (
       .ui.grid>.row>.column {
         text-align: center;
       }
+
+      .item a:hover {
+        font-size: 18px;
+      }
     `}</style>
   </Segment>
 );
