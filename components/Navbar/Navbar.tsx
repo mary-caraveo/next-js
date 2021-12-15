@@ -40,7 +40,7 @@ const Navbar = () => {
         .ui.menu
         .item {
           color: white;
-          padding: 5px 6px;
+          padding: 5px 10px;
         }
 
         .ui.menu
@@ -69,6 +69,12 @@ const Navbar = () => {
         .ui.text.container p{
           text-align: justify;
         }
+
+        @media (max-width: 767px) {
+        .right.menu {
+          width: 100%;
+        }
+
       `}</style>
     </Menu>
   );

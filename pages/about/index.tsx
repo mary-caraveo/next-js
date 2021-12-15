@@ -97,10 +97,10 @@ const AboutPage = () => {
           counter-increment: orderedlist;
           content: counter(orderedlist);
           position: absolute;
-          top: -43px;
-          left: -42px;
+          top: -34px;
+          left: -36px;
           color: #cecece;
-          font-size: 5rem;
+          font-size: 4rem;
           font-weight: bold;
         }
 
@@ -112,6 +112,36 @@ const AboutPage = () => {
           padding-left: 40px;
           margin-bottom: 2rem;
         }
+
+        @media (max-width: 767px) {
+          li::before {
+            top: -13px;
+            left: -4px;
+            font-size: 2rem;
+          }
+
+          ol {
+            margin-left: 5px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          }
+
+          h3.ui.header {
+            margin-left: 15px;
+          }
+        }
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+          li::before {
+            top: -25px;
+            left: -12px;
+            font-size: 3rem;
+          }
+
+          h3.ui.header {
+            margin-left: 15px;
+          }
+        }
+
       `}</style>
     </Layout>
   )
