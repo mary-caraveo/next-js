@@ -6,7 +6,7 @@ Instalar las dependencias del proyecto:
 Para compilar el proyecto en un entorno de desarrollo:
 - npm run dev
 
-Ejecutar el proyecto para un entorno de producción:
+Para ejecutar el proyecto en un entorno de producción:
 - npm run build
 - npm run start
 
